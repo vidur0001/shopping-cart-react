@@ -5,6 +5,42 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  @media screen and (max-width:320px) {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 1500px;
+    height: 240px;
+    /* padding-bottom: -2px; */
+    margin-left: 10px;
+    justify-content: space-around;
+    align-items: flex-start;
+    overflow-y:scroll;
+  }
+  @media screen and (max-width:768px) {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 768px;
+    height: 110px;
+    justify-content: space-around;
+    align-items: flex-end;
+  }
+}
+.navbar *{
+  @media screen and (max-width:320px) {
+    display: flex;
+    font-size: 25px;
+    flex-direction: column;
+    padding-left:20px;
+    width: 500px;
+    height: 150px;
+  }
+}
+#logo{
+  @media screen and (max-width:320px) {
+    display: flex;
+    block-size: 60px;
+    margin-left: -245px;
+  }
 }
 
 .links {

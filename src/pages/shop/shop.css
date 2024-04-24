@@ -1,7 +1,17 @@
 .shopTitle {
   margin-top: 100px;
+  padding-left: 0px;
   text-align: center;
-  font-size: 40px;
+  font-size: 30px;
+}
+.innovacart{
+  @media screen and (max-width:768px) {
+    display: flex;
+    width: 500px;
+    height: 120px;
+    font-size: 90px;
+    margin-left: 180px;
+  }
 }
 .products {
   width: 100%;
@@ -10,7 +20,27 @@
   grid-template-columns: 1fr 1fr 1fr;
   place-items: center;
 }
-
+.electronics{
+  color: rgb(154, 16, 208);
+  margin-left: 700px;
+  @media screen  and (max-width:768px) {
+    display:flex;
+    margin-left: 280px;
+    width: 350px;
+    align-content: center;
+    font-size: 38px;
+  }
+}
+.electronics:hover{
+  /* text-decoration: underline; */
+  /* border: 2px solid green; */
+  width: 95px;
+  padding-left: 3px;
+  background-color:rgb(154, 16, 208) ;
+  color: white;
+  height: 42px;
+  border-radius: 30px;
+}
 .product {
   border-radius: 15px;
   width: 300px;

@@ -1,0 +1,58 @@
+@keyframes grow {
+    0% {
+      font-size: 0;
+    }
+    100% {
+      font-size: 24px;
+      
+    }
+  }
+  
+  /* .sides:hover{
+    animation-name: grow;
+    animation-duration: 2s;
+  } */
+  
+  .sides:hover{
+    animation-name:grow;
+    animation-delay: -2s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  }
+.sides{
+    display: flex;
+    width: 390px;
+    height: 1280px;
+    border: 4px solid blue;
+    border-style:solid;
+    border-radius: 44px;
+    flex-direction:column;
+    font-size: 55;
+    margin: 3px;
+    padding-left: 4px;
+    color: black;
+    gap: 10px;
+    /* animation-duration: 2s; */
+}
+.sides>h2{
+    color: black;
+    font-size: 28px;
+}
+.sides>button{
+    width: 350px;
+    text-align: left;
+    border: none;
+    font-size: 17px;
+    cursor:pointer;
+    border-radius: 0px;
+    background-color:aliceblue;
+}
+.sides>button:hover{
+    background-color: rgb(113, 209, 18);
+    
+    /* background-color: rgb(195, 21, 21); */
+    color: white;
+}
+.welcome{
+    color: rgb(231, 17, 38);
+}
